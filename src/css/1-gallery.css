@@ -33,6 +33,11 @@ img {
   flex-wrap: wrap;
   row-gap: 24px;
   column-gap: 24px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .gallery-item {
@@ -47,4 +52,17 @@ img {
 
 .gallery-image:hover {
   transform: scale(104%);
+}
+
+.sl-wrapper {
+  width: 1440px;
+  height: 696px;
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper .sl-navigation .sl-prev,
+.sl-wrapper .sl-navigation .sl-next,
+.sl-wrapper .sl-counter,
+.sl-wrapper .sl-close {
+  color: rgba(255, 255, 255, 1);
 }

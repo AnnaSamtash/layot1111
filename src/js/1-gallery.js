@@ -1,6 +1,4 @@
 import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
-
 
 const images = [
   {
@@ -79,4 +77,8 @@ const markup = images
 
 listOfGalleryImg.innerHTML = markup;
 
-var lightbox = new SimpleLightbox('.gallery', {caption: true, captionSelector: 'img', captionType: 'text', captionsData: 'alt', captionPosition: "bottom", captionDelay: 250});
+const lightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250});
